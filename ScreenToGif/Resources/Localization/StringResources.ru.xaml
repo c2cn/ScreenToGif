@@ -61,7 +61,12 @@
     <s:String x:Key="S.Warning.Graphics.Switch">Открыть настройки Windows</s:String>
     
     <!--Keys-->
-    <s:String x:Key="S.Keys.Space">Пробел</s:String>  
+    <s:String x:Key="S.Keys.Enter">Enter</s:String>  
+    <s:String x:Key="S.Keys.Esc">Esc</s:String>  
+    <s:String x:Key="S.Keys.Space">Space</s:String>  
+
+    <!--Mouse-->
+    <s:String x:Key="S.Mouse.Right">Щелчок  ПКМ</s:String>  
     
     <!--Tray icon-->
     <s:String x:Key="S.NewRecording">Новая запись с экрана</s:String>
@@ -151,7 +156,7 @@
     <s:String x:Key="S.StartUp.Editor">Редактор</s:String>
     <s:String x:Key="S.StartUp.Editor.Tooltip">Редактор, здесь можно начать новую запись или редактировать существующую.</s:String>
     <s:String x:Key="S.StartUp.Options">Настройки</s:String>
-    <s:String x:Key="S.StartUp.NewRelease">Доступна новая версия: {0}</s:String>
+    <s:String x:Key="S.StartUp.NewRelease">Доступна новая версия</s:String>
     <s:String x:Key="S.StartUp.NewRelease.Tooltip">Загрузка последней версии программы.</s:String>
 
     <!--Updater-->
@@ -225,6 +230,7 @@
     <s:String x:Key="S.Options.App.Theme.Scheme.Medium">Средняя</s:String>
     <s:String x:Key="S.Options.App.Theme.Scheme.Dark">Темная</s:String>
     <s:String x:Key="S.Options.App.Theme.Scheme.VeryDark">Очень темная</s:String>
+    <s:String x:Key="S.Options.App.Theme.Scheme.FollowSystem">Системная</s:String>
     <s:String x:Key="S.Options.App.Theme.Scheme.Custom">Своя</s:String>
     <s:String x:Key="S.Options.App.Theme.Scheme.Example">Пример цвета.</s:String>
     <s:String x:Key="S.Options.App.Tray">Значок в системном трее</s:String>
@@ -368,6 +374,12 @@
     <s:String x:Key="S.Options.Editor.General.LimitHistory">Лимит истории отмен/повторов,</s:String>
     <s:String x:Key="S.Options.Editor.General.LimitHistory.Info">будут удаляться более старые действия.</s:String>
     <s:String x:Key="S.Options.Editor.General.LimitHistory.Maximum">Максимум сохраненных действий.</s:String>
+    <s:String x:Key="S.Options.Editor.General.SyncPath.Folder">Синхронизировать папку вывода в пресетах.</s:String>
+    <s:String x:Key="S.Options.Editor.General.SyncPath.Folder.Info">(В пресетах будет одинаковый путь вывода)</s:String>
+    <s:String x:Key="S.Options.Editor.General.SyncPath.Filename">Также синхронизировать имя файла.</s:String>
+    <s:String x:Key="S.Options.Editor.General.SyncPath.Filename.Info">(В пресетах будет одинаковое имя файла)</s:String>
+    <s:String x:Key="S.Options.Editor.General.SyncPath.SameType">Синхронизировать только пресеты с одинаковыми типами файла.</s:String>
+    <s:String x:Key="S.Options.Editor.General.SyncPath.SameType.Info">(Синхронизировать только пресеты с одинаковыми типами файла)</s:String>
     
     <!--Options • Tasks-->
     <s:String x:Key="S.Options.Tasks.Title">Автозадача</s:String>
@@ -601,6 +613,8 @@
     
     <!--Options • About-->
     <s:String x:Key="S.Options.About.Version">Версия:</s:String>
+    <s:String x:Key="S.Options.About.UpdateCheck">Проверить обновления</s:String>
+    <s:String x:Key="S.Options.About.UpdateCheck.Nothing">У вас последняя версия.</s:String>
     <s:String x:Key="S.Options.About.Author">Автор: Nicke Manarin</s:String>
     <s:String x:Key="S.Options.About.StoreVersion">Версия магазина Microsoft. Некоторые функции отключены из-за принудительных политик.</s:String>
     <s:String x:Key="S.Options.About.Contact">Контакты</s:String>
@@ -765,6 +779,8 @@
     <s:String x:Key="S.Preset.Autosave.Info">Изменения в этом пресете сохраняются автоматически.</s:String>
     <s:String x:Key="S.Preset.Default.Title">По умолчанию ({0})</s:String>
     <s:String x:Key="S.Preset.Default.Description">Пресет по умолчанию для кодеровщика.</s:String>
+    <s:String x:Key="S.Preset.Twitter.Title">Для Twitter ({0})</s:String>
+    <s:String x:Key="S.Preset.Twitter.Description">Соблюдает ограничения Twitter (кроме размера и разрешения).</s:String>
     <s:String x:Key="S.Preset.Hevc.Title">HEVC ({0})</s:String>
     <s:String x:Key="S.Preset.Hevc.Description">High Efficiency Video Coding.</s:String>
     <s:String x:Key="S.Preset.Vp8.Title">VP8 ({0})</s:String>
@@ -1226,16 +1242,18 @@
     <s:String x:Key="S.Clipboard.After">После текущего кадра</s:String>
     
     <!--Editor • Resize-->
-    <s:String x:Key="S.Resize.CurrentProperties">Текущие свойства</s:String>
+    <s:String x:Key="S.Resize.Difference">Разница</s:String>
     <s:String x:Key="S.Resize.Dpi">DPI</s:String>
-    <s:String x:Key="S.Resize.NewProperties">Новые свойства</s:String>
+    <s:String x:Key="S.Resize.Options">Настройки</s:String>
+    <s:String x:Key="S.Resize.Pixels">Пмксели (px)</s:String>
+    <s:String x:Key="S.Resize.Percent">Проценты (%)</s:String>
     <s:String x:Key="S.Resize.Dpi2">DPI:</s:String>
     <s:String x:Key="S.Resize.KeepAspect">Сохранить пропорции.</s:String>
-    <s:String x:Key="S.Resize.Options">Настройки</s:String>
-    <s:String x:Key="S.Resize.ScalingQuality">Качество масштабирования:</s:String>
+    <s:String x:Key="S.Resize.ScalingQuality">Качество:</s:String>
     <s:String x:Key="S.Resize.ScalingQuality.Fant">Fant (высокое качество)</s:String>
     <s:String x:Key="S.Resize.ScalingQuality.Linear">Linear (низкое качество)</s:String>
     <s:String x:Key="S.Resize.ScalingQuality.NearestNeighbor">Nearest neighbor (низкое качество, быстрее)</s:String>
+    <s:String x:Key="S.Resize.ScalingQuality.Info">Качество масштабирования.</s:String>
     <s:String x:Key="S.Resize.Warning">Необходимо выбрать другое значение, чтобы применить размер.</s:String>
     
     <!--Editor • Crop-->
@@ -1346,6 +1364,9 @@
 
     <!--Editor • Mouse clicks-->
     <s:String x:Key="S.MouseClicks">Нажатия мыши</s:String>
+    <s:String x:Key="S.MouseClicks.Color.Left">Цвет левой кнопки:</s:String>
+    <s:String x:Key="S.MouseClicks.Color.Middle">Цвет средней кнопки:</s:String>
+    <s:String x:Key="S.MouseClicks.Color.Right">Цвет правой кнопки:</s:String>
     <s:String x:Key="S.MouseClicks.Warning.None">В вашем проекте не обнаружено щелчков мыши.</s:String>
     
     <!--Editor • Watermark-->
@@ -1800,7 +1821,7 @@
     <s:String x:Key="S.FontWeights.Black">Жирный</s:String>
     <s:String x:Key="S.FontWeights.Bold">Полужирный</s:String>
     <s:String x:Key="S.FontWeights.DemiBold">Почти полужирный</s:String>
-    <s:String x:Key="S.FontWeights.ExtraBlack">Экстра-жирный</s:String>
+    <s:String x:Key="S.FontWeights.ExtraBlack">Еще жирнее</s:String>
     <s:String x:Key="S.FontWeights.ExtraBold">Экстра-полужирный</s:String>
     <s:String x:Key="S.FontWeights.ExtraLight">Экстра-светлый</s:String>
     <s:String x:Key="S.FontWeights.Heavy">Более жирный</s:String>
@@ -1810,8 +1831,8 @@
     <s:String x:Key="S.FontWeights.Regular">Нормальный</s:String>
     <s:String x:Key="S.FontWeights.SemiBold">Полу-полужирный</s:String>
     <s:String x:Key="S.FontWeights.Thin">Тонкий</s:String>
-    <s:String x:Key="S.FontWeights.UltraBlack">Сверх-жирный</s:String>
-    <s:String x:Key="S.FontWeights.UltraBold">Сверх-полужирный</s:String>
+    <s:String x:Key="S.FontWeights.UltraBlack">Супер-жирный</s:String>
+    <s:String x:Key="S.FontWeights.UltraBold">Ультра-жирный</s:String>
     <s:String x:Key="S.FontWeights.UltraLight">Сверх-светлый</s:String>
     
     <!--VerticalAlignment-->
@@ -1839,6 +1860,6 @@
     <s:String x:Key="S.TextDecorations.None">Нет</s:String>
     <s:String x:Key="S.TextDecorations.Underline">Подчеркнутый</s:String>
     <s:String x:Key="S.TextDecorations.Strikethrough">Зачеркнутый</s:String>
-    <s:String x:Key="S.TextDecorations.OverLine">OverLine</s:String>
-    <s:String x:Key="S.TextDecorations.Baseline">Baseline</s:String>
+    <s:String x:Key="S.TextDecorations.OverLine">Линия сверху</s:String>
+    <s:String x:Key="S.TextDecorations.Baseline">На линии</s:String>
 </ResourceDictionary>

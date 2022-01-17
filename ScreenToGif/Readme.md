@@ -2,19 +2,17 @@
 
 This is the current project of ScreenToGif.  
 
-_VS 2019 and .Net 4.8 or newer required._
+_VS 2022 and .NET 6 or newer required._
 
-## What's new? (Version 2.30)
+## What's new? (Version 2.35.4)
 
-• Added presets for exporting Mp4 and Mov for Twitter.    
-• Improved performance in previewing animations (thanks to @mabakay).    
+• Updated the French localization.  
 
 ### Fixed:
 
-♦ #873 - The multi-frame selection was getting lost after removing all previous/next frames (thanks to @pawlos).  
-♦ #883 - Cancelling the media insertion by pressing the cancel button was causing a crash (thanks to @pawlos).  
-♦ #885 - The button to open the file after encoding was not appearing.    
-♦ #887 - The Caption was not being rendered correctly.   
+♦ It was not possible to load projects from the recent prtojects list.  
+♦ It was possible to import images with multiple sizes, which would end up in crashes during encoding.
+♦ The translation updater was not working for portable releases.  
 
 ### Known Bugs:
   
@@ -24,5 +22,4 @@ _VS 2019 and .Net 4.8 or newer required._
 ♠ The newer recorder doesn't let you move the selected region to other windows.  
 ♠ When using the capture option "Capture a frame only when something changes on screen" and moving the recording window, the recording will glitch.  
 ♠ The Previous/Next repeat buttons are only triggering the events once (because of the command).   
-♠ Holding the side arrows to seek the frames for a long period makes the scrubing act jump frames.  
-♠ Capturing with DirectX using a screen not in landscaped mode results in a rotated frame.  
+♠ Capturing with DirectX using a screen not in landscaped mode results in a rotated frame.

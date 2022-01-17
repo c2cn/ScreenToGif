@@ -42,7 +42,7 @@
     <s:String x:Key="S.Warning.Net.Message">Om deze app correct te gebruiken, moet je de juiste versie van .Net Framework downloaden.&#10;Wilt u de webpagina openen om deze te downloaden?</s:String>
     <s:String x:Key="S.Warning.Single.Title">Slechts één instantie toegestaan</s:String>
     <s:String x:Key="S.Warning.Single.Header">De app is al actief</s:String>
-    <s:String x:Key="S.Warning.Single.Message">ScreenToGif draait al, maar blijkbaar is er geen raam open. Controleer je systeemvak, er moet een ScreenToGif-pictogram zijn.</s:String>
+    <s:String x:Key="S.Warning.Single.Message">ScreenToGif draait al, maar blijkbaar zonder venster geopend. Controleer het systeemvak, er moet een ScreenToGif-pictogram zijn.</s:String>
     
     <s:String x:Key="S.SavingSettings.Title">Instellingen opslaan</s:String>
     <s:String x:Key="S.SavingSettings.Instruction">Wil je het opnieuw proberen op te slaan?</s:String>
@@ -50,7 +50,7 @@
     
     <s:String x:Key="S.Exiting.Title">ScreenToGif afsluiten</s:String>
     <s:String x:Key="S.Exiting.Instruction">Weet je zeker dat je wilt afsluiten?</s:String>
-    <s:String x:Key="S.Exiting.Message">Alle schermen worden gesloten en het pictogram wordt van de taakbalk verwijderd.</s:String>
+    <s:String x:Key="S.Exiting.Message">Alle vensters worden gesloten en het pictogram wordt van de taakbalk verwijderd.</s:String>
 
     <!--Warnings • Graphics engine-->
     <s:String x:Key="S.Warning.Graphics.Title">Grafische adapter wisselen</s:String>
@@ -61,7 +61,12 @@
     <s:String x:Key="S.Warning.Graphics.Switch">Windows Instellingen openen</s:String>
     
     <!--Keys-->
+    <s:String x:Key="S.Keys.Enter">Enter</s:String>
+    <s:String x:Key="S.Keys.Esc">Esc</s:String>
     <s:String x:Key="S.Keys.Space">Spatie</s:String>
+
+    <!--Mouse-->
+    <s:String x:Key="S.Mouse.Right">Rechtermuisklik</s:String>
     
     <!--Tray icon-->
     <s:String x:Key="S.NewRecording">Nieuwe Schermopname</s:String>
@@ -104,6 +109,7 @@
     <s:String x:Key="S.Command.DeleteNext">Verwijder alle volgende frames</s:String>
     <s:String x:Key="S.Command.RemoveDuplicates">Duplicaten verwijderen</s:String>
     <s:String x:Key="S.Command.Reduce">Verminder het aantal frames</s:String>
+    <s:String x:Key="S.Command.SmoothLoop">Een vloeiende lus aanmaken</s:String>
     <s:String x:Key="S.Command.Reverse">Animatie omkeren</s:String>
     <s:String x:Key="S.Command.Yoyo">Laat de animatie vooruit en achteruit gaan</s:String>
     <s:String x:Key="S.Command.MoveLeft">Verplaats het geselecteerde frame naar links</s:String>
@@ -151,7 +157,7 @@
     <s:String x:Key="S.StartUp.Editor">Editor</s:String>
     <s:String x:Key="S.StartUp.Editor.Tooltip">Opent het Editorscherm, de centrale plek van deze applicatie. Hier kunnen nieuwe opnames worden gestart en bestaande opnames bewerkt.</s:String>
     <s:String x:Key="S.StartUp.Options">Instellingen</s:String>
-    <s:String x:Key="S.StartUp.NewRelease">Een nieuwe uitgave is beschikbaar • {0}</s:String>
+    <s:String x:Key="S.StartUp.NewRelease">Een nieuwe uitgave is beschikbaar</s:String>
     <s:String x:Key="S.StartUp.NewRelease.Tooltip">Download de nieuwste versie van ScreenToGif.</s:String>
 
     <!--Updater-->
@@ -159,6 +165,7 @@
     <s:String x:Key="S.Updater.Header">Er is een nieuwe update beschikbaar</s:String>
     <s:String x:Key="S.Updater.NewRelease">Nieuwe uitgave!</s:String>
     <s:String x:Key="S.Updater.NewRelease.Info">Nieuwe uitgave beschikbaar, Versie {0}!&#10;Klik hier voor meer details.</s:String>
+    <s:String x:Key="S.Updater.NoNewRelease.Info">Het lijkt erop dat jouw systeem niet langer wordt ondersteund of dat er iets is veranderd in het updatesysteem. Probeer het handmatig te downloaden van de website.</s:String>
     <s:String x:Key="S.Updater.Version">Versie</s:String>
     <s:String x:Key="S.Updater.Portable">Portable</s:String>
     <s:String x:Key="S.Updater.Installer">Installatieprogramma</s:String>
@@ -195,9 +202,7 @@
     <s:String x:Key="S.Options.Other">Overige</s:String>
     <s:String x:Key="S.Options.Warning.Follow.Header">Geen sneltoets voor het volgen van de cursor</s:String>
     <s:String x:Key="S.Options.Warning.Follow.Message">Om de functie voor het volgen van de muiscursor te gebruiken, moet je een sneltoets instellen om deze indien nodig te wisselen.</s:String>
-    <s:String x:Key="S.Options.Warning.DesktopDuplication.Header">Ontbrekende afhankelijkheden voor schermopname</s:String>
-    <s:String x:Key="S.Options.Warning.DesktopDuplication.Message">Om het scherm vast te leggen met de Desktop Duplication API, moet je de SharpDx-bibliotheken downloaden.</s:String>
-    
+
     <!--Options • Application-->
     <s:String x:Key="S.Options.App.Startup">Opstarten</s:String>
     <s:String x:Key="S.Options.App.Startup.Mode.Manual">Handmatig&#10;starten</s:String>
@@ -225,11 +230,12 @@
     <s:String x:Key="S.Options.App.Theme.Scheme.Medium">Gemiddeld</s:String>
     <s:String x:Key="S.Options.App.Theme.Scheme.Dark">Donker</s:String>
     <s:String x:Key="S.Options.App.Theme.Scheme.VeryDark">Zeer donker</s:String>
+    <s:String x:Key="S.Options.App.Theme.Scheme.FollowSystem">Systeem</s:String>
     <s:String x:Key="S.Options.App.Theme.Scheme.Custom">Aangepast</s:String>
     <s:String x:Key="S.Options.App.Theme.Scheme.Example">Voorbeeldkleuren.</s:String>
     <s:String x:Key="S.Options.App.Tray">Systeemvakpictogram</s:String>
     <s:String x:Key="S.Options.App.Tray.Show">Pictogram in het systeemvak van de taakbalk (meldingencentrum) weergeven.</s:String>
-    <s:String x:Key="S.Options.App.Tray.LeaveOpen">Houd de toepassing open, zelfs als alle schermen gesloten zijn.</s:String>
+    <s:String x:Key="S.Options.App.Tray.LeaveOpen">Houd de toepassing open, zelfs als alle vensters gesloten zijn.</s:String>
     <s:String x:Key="S.Options.App.Tray.Interactions.Nothing">Doe niets</s:String>
     <s:String x:Key="S.Options.App.Tray.Interactions.Open">Open een venster</s:String>
     <s:String x:Key="S.Options.App.Tray.Interactions.Open.None">Geen venster</s:String>
@@ -238,7 +244,7 @@
     <s:String x:Key="S.Options.App.Tray.Interactions.Restore">Alle vensters herstellen</s:String>
     <s:String x:Key="S.Options.App.Tray.Interactions.Left">Linkermuisknop:</s:String>
     <s:String x:Key="S.Options.App.Tray.Interactions.DoubleLeft">Linkermuisknop (x2):</s:String>
-    <s:String x:Key="S.Options.App.Tray.Interactions.Middle">Middelste klik:</s:String>
+    <s:String x:Key="S.Options.App.Tray.Interactions.Middle">Middenmuisknop:</s:String>
     <s:String x:Key="S.Options.App.Tray.Interactions.Window">Venster:</s:String>
     <s:String x:Key="S.Options.App.Tray.Interactions.Else">Of anders, opent:</s:String>
     <s:String x:Key="S.Options.App.General">Algemeen</s:String>
@@ -247,7 +253,7 @@
     <s:String x:Key="S.Options.App.General.NotifyWhileClosingApp">Bevestiging vragen bij het sluiten van het programa (d.m.v. 'Afsluiten').</s:String>
     <s:String x:Key="S.Options.App.General.DisableHardwareAcceleration">Hardwareversnelling uitschakelen.</s:String>
     <s:String x:Key="S.Options.App.General.DisableHardwareAcceleration.Info">(De gebruikersinterface wordt weergegeven via softwaremodus)</s:String>
-    <s:String x:Key="S.Options.App.General.CheckForTranslationUpdates">Controleren op nieuw vertalingen.</s:String>
+    <s:String x:Key="S.Options.App.General.CheckForTranslationUpdates">Controleren op nieuwe vertalingen.</s:String>
     <s:String x:Key="S.Options.App.General.CheckForTranslationUpdates.Info">(Bijgewerkte vertalingen worden automatisch gedownload en geïnstalleerd)</s:String>
     <s:String x:Key="S.Options.App.General.CheckForUpdates">Controleer op updates bij het opstarten.</s:String>
     <s:String x:Key="S.Options.App.General.UpdateOnClose">Updates automatisch installeren na het sluiten van de app.</s:String>
@@ -368,6 +374,12 @@
     <s:String x:Key="S.Options.Editor.General.LimitHistory">Leg een limiet op aan de geschiedenis van ongedaan maken/opnieuw uitvoeren.</s:String>
     <s:String x:Key="S.Options.Editor.General.LimitHistory.Info">(Oudere acties worden verwijderd wanneer de limiet is bereikt)</s:String>
     <s:String x:Key="S.Options.Editor.General.LimitHistory.Maximum">(Maximaal aantal opgeslagen acties)</s:String>
+    <s:String x:Key="S.Options.Editor.General.SyncPath.Folder">De uitvoermap met de voorinstellingen synchroniseren.</s:String>
+    <s:String x:Key="S.Options.Editor.General.SyncPath.Folder.Info">(Voorinstellingen gebruiken hetzelfde uitvoerpad)</s:String>
+    <s:String x:Key="S.Options.Editor.General.SyncPath.Filename">Bestandsnaam ook synchroniseren.</s:String>
+    <s:String x:Key="S.Options.Editor.General.SyncPath.Filename.Info">(Voorinstellingen gebruiken ook dezelfde bestandsnaam)</s:String>
+    <s:String x:Key="S.Options.Editor.General.SyncPath.SameType">Alleen voorinstellingen van hetzelfde bestandstype synchroniseren.</s:String>
+    <s:String x:Key="S.Options.Editor.General.SyncPath.SameType.Info">(Alleen voorinstellingen van hetzelfde bestandstype worden gesynchroniseerd)</s:String>
     
     <!--Options • Tasks-->
     <s:String x:Key="S.Options.Tasks.Title">Taak</s:String>
@@ -393,7 +405,7 @@
     <s:String x:Key="S.Options.Shortcuts.Global.OpenOptions">Opties:</s:String>
     <s:String x:Key="S.Options.Shortcuts.Global.OpenOptions.Info">(Opent het Instellingenvenster)</s:String>
     <s:String x:Key="S.Options.Shortcuts.Global.Exit">Afsluiten:</s:String>
-    <s:String x:Key="S.Options.Shortcuts.Global.Exit.Info">(Sluit alle schermen en verwijdert het programma uit de taakbalk)</s:String>
+    <s:String x:Key="S.Options.Shortcuts.Global.Exit.Info">(Sluit alle vensters en verwijdert het programma uit de taakbalk)</s:String>
     <s:String x:Key="S.Options.Shortcuts.Recorders">Opname</s:String>
     <s:String x:Key="S.Options.Shortcuts.Recorders.StartPause">Start/Pauze:</s:String>
     <s:String x:Key="S.Options.Shortcuts.Recorders.StartPause.Info">(Start/pauzeert de opname. In Foto-modus wordt een enkele opname genomen)</s:String>
@@ -571,9 +583,6 @@
     <s:String x:Key="S.Options.Extras.GifskiLocation.Select">Locatie van Gifski selecteren</s:String>
     <s:String x:Key="S.Options.Extras.GifskiLocation.File">Gifski-bibliotheek</s:String>
     <s:String x:Key="S.Options.Extras.GifskiLocation.Invalid">Het pad van Gifski bevat een of meer ongeldige tekens. Selecteer de juiste locatie van het bestand.</s:String>
-    <s:String x:Key="S.Options.Extras.SharpDxLocation">SharpDx-map (SharpDX.dll, SharpDX.Direct3D11.dll en SharpDX.DXGI.dll)</s:String>
-    <s:String x:Key="S.Options.Extras.SharpDxLocation.Select">Selecteer de locatie van de SharpDx-bibliotheken</s:String>
-    <s:String x:Key="S.Options.Extras.SharpDxLocation.Invalid">Het pad voor de SharpDx-bibliotheken bevat een of meer ongeldige tekens. Selecteer alstublieft een geldige map voor die bibliotheken.</s:String>
     <s:String x:Key="S.Options.Extras.License.Ffmpeg">FFmpeg licentie</s:String>
     <s:String x:Key="S.Options.Extras.License.Gifski">Gifski licentie</s:String>
     <s:String x:Key="S.Options.Extras.License.SharpDx">SharpDx-licentie</s:String>
@@ -601,6 +610,8 @@
     
     <!--Options • About-->
     <s:String x:Key="S.Options.About.Version">Versie:</s:String>
+    <s:String x:Key="S.Options.About.UpdateCheck">Controleren op updates</s:String>
+    <s:String x:Key="S.Options.About.UpdateCheck.Nothing">Dit is al de jongste versie.</s:String>
     <s:String x:Key="S.Options.About.Author">Auteur: Nicke Manarin</s:String>
     <s:String x:Key="S.Options.About.StoreVersion">Microsoft Store versie. Sommige functies zijn niet beschikbaar door opgelegde beperkingen.</s:String>
     <s:String x:Key="S.Options.About.Contact">Contact</s:String>
@@ -678,8 +689,7 @@
     <s:String x:Key="S.Recorder.Warning.CaptureNotPossible.Info">Het was niet mogelijk om het scherm vast te leggen. De opnamemethode heeft na 5 pogingen geen frame geretourneerd.</s:String>
     <s:String x:Key="S.Recorder.Warning.StartPauseNotPossible">Het vastleggen/pauzeren van het scherm was niet mogelijk</s:String>
     <s:String x:Key="S.Recorder.Warning.Windows8">Windows 8 of nieuwer is vereist om het scherm vast te leggen met de Desktop Duplication API.</s:String>
-    <s:String x:Key="S.Recorder.Warning.MissingSharpDx">De SharpDx-bibliotheken zijn vereist om het scherm vast te leggen met de Desktop Duplication API. Ga naar Opties > Extra's om het te downloaden.</s:String>
-    
+
     <!--New recorder-->
     <s:String x:Key="S.Recorder.Area">Gebied</s:String>
     <s:String x:Key="S.Recorder.Area.Select">Selecteer een gebied</s:String>
@@ -765,6 +775,8 @@
     <s:String x:Key="S.Preset.Autosave.Info">Wijzigingen in deze voorinstelling worden automatisch opgeslagen.</s:String>
     <s:String x:Key="S.Preset.Default.Title">Standaard ({0})</s:String>
     <s:String x:Key="S.Preset.Default.Description">Standaardinstelling voor de encoder.</s:String>
+    <s:String x:Key="S.Preset.Twitter.Title">Voor Twitter ({0})</s:String>
+    <s:String x:Key="S.Preset.Twitter.Description">Respecteert de uploadlimieten van Twitter (behalve grootte en resolutie).</s:String>
     <s:String x:Key="S.Preset.Hevc.Title">HEVC ({0})</s:String>
     <s:String x:Key="S.Preset.Hevc.Description">High Efficiency Video Coding.</s:String>
     <s:String x:Key="S.Preset.Vp8.Title">VP8 ({0})</s:String>
@@ -802,7 +814,7 @@
     
     <!--Insert frames-->
     <s:String x:Key="S.InsertFrames.Title">Frames toevoegen</s:String>
-    <s:String x:Key="S.InsertFrames.Info">Beide kanten moeten dezelfde grootte hebben. In dit scherm kan je de afbeelding ten opzichte van canvas herpositioneren of veranderen qua grootte. Klik op afbeelding om te selecteren.</s:String>
+    <s:String x:Key="S.InsertFrames.Info">Beide kanten moeten dezelfde grootte hebben. In dit venster kan je de afbeelding ten opzichte van canvas herpositioneren of veranderen qua grootte. Klik op afbeelding om te selecteren.</s:String>
     <s:String x:Key="S.InsertFrames.CanvasSize">Canvasgrootte:</s:String>
     <s:String x:Key="S.InsertFrames.FitCanvas">Afbeelding aanpassen aan canvas</s:String>
     <s:String x:Key="S.InsertFrames.FitCanvas.Info">Canvasgrootte aanpassen om beide afbeeldingen passend te maken (t.o.v. linkerbovenhoek).</s:String>
@@ -812,7 +824,7 @@
     <s:String x:Key="S.InsertFrames.ImageSize">Afbeeldinggrootte:</s:String>
     <s:String x:Key="S.InsertFrames.ImagePosition">Afbeeldingpositie:</s:String>
     <s:String x:Key="S.InsertFrames.ResetImageSizePosition">Afbeeldingsgrootte &#10;en -positie herstellen</s:String>
-    <s:String x:Key="S.InsertFrames.Info2">Nieuwe frames worden toegevoegd in de huidige lijst van frames op de positie:</s:String>
+    <s:String x:Key="S.InsertFrames.Info2">Nieuwe frames worden toegevoegd in de huidige&#10;lijst van frames op de positie:</s:String>
     <s:String x:Key="S.InsertFrames.Before">Voor</s:String>
     <s:String x:Key="S.InsertFrames.After">Na</s:String>
     <s:String x:Key="S.InsertFrames.Frame">Frame</s:String>
@@ -1012,6 +1024,7 @@
     <s:String x:Key="S.Editor.Edit.Delete">Verwijderen</s:String>
     <s:String x:Key="S.Editor.Edit.Frames.Duplicates">Duplicaten&#10;verwijderen</s:String>
     <s:String x:Key="S.Editor.Edit.Frames.Reduce">Frames&#10;verminderen</s:String>
+    <s:String x:Key="S.Editor.Edit.Frames.SmoothLoop">Vloeiende&#x0d;Lus</s:String>
     <s:String x:Key="S.Editor.Edit.DeletePrevious">Alles hiervoor verwijderen</s:String>
     <s:String x:Key="S.Editor.Edit.DeleteNext">Alles hierna verwijderen</s:String>
     
@@ -1142,6 +1155,8 @@
     <s:String x:Key="S.Editor.ApplyingTransition">Overgangseffect toepassen</s:String>
     <s:String x:Key="S.Editor.PreparingSaving">Opslaan voorbereiden</s:String>
     <s:String x:Key="S.Editor.CancelDiscard">Annuleer het laden en gooi het project weg.</s:String>
+    <s:String x:Key="S.Editor.FindingLoop">De perfecte lus zoeken</s:String>
+    <s:String x:Key="S.Editor.DiscardingLoop">Ongebruikte frames verwijderen</s:String>
 
     <!--Editor • Frame list-->
     <s:String x:Key="S.Editor.List.Frame">Frame:</s:String>
@@ -1226,16 +1241,18 @@
     <s:String x:Key="S.Clipboard.After">Na geselecteerde frame</s:String>
     
     <!--Editor • Resize-->
-    <s:String x:Key="S.Resize.CurrentProperties">Huidige eigenschappen</s:String>
+    <s:String x:Key="S.Resize.Difference">Verschil</s:String>
     <s:String x:Key="S.Resize.Dpi">Dpi</s:String>
-    <s:String x:Key="S.Resize.NewProperties">Nieuwe eigenschappen</s:String>
+    <s:String x:Key="S.Resize.Options">Options</s:String>
+    <s:String x:Key="S.Resize.Pixels">Pixels (px)</s:String>
+    <s:String x:Key="S.Resize.Percent">Procent (%)</s:String>
     <s:String x:Key="S.Resize.Dpi2">DPI:</s:String>
     <s:String x:Key="S.Resize.KeepAspect">Beeldverhouding behouden.</s:String>
-    <s:String x:Key="S.Resize.Options">Options</s:String>
     <s:String x:Key="S.Resize.ScalingQuality">Schaalkwaliteit:</s:String>
     <s:String x:Key="S.Resize.ScalingQuality.Fant">Fant (hogere kwaliteit)</s:String>
     <s:String x:Key="S.Resize.ScalingQuality.Linear">Lineair (lagere kwaliteit)</s:String>
     <s:String x:Key="S.Resize.ScalingQuality.NearestNeighbor">Naaste buur (lagere kwaliteit en sneller)</s:String>
+    <s:String x:Key="S.Resize.ScalingQuality.Info">Schaalkwaliteit.</s:String>
     <s:String x:Key="S.Resize.Warning">Kies een andere waarde om de grootte aan te passen.</s:String>
     
     <!--Editor • Crop-->
@@ -1279,6 +1296,16 @@
     <s:String x:Key="S.RemoveDuplicates.Delay.Average">Gemiddelde gebruiken</s:String>
     <s:String x:Key="S.RemoveDuplicates.Delay.Sum">Totaal gebruiken</s:String>
     <s:String x:Key="S.RemoveDuplicates.Info">Deze actie analyseert elk frame (pixel per pixel) en verwijderd alle frames die op zijn minst {0} % gelijk zijn aan frame ervoor of erna.&#10;U kunt kiezen of de vertraging van de frames (duur van de vertoningen) aangepast moet worden.</s:String>
+
+    <!--Editor • Smooth Loop-->
+    <s:String x:Key="S.SmoothLoop.Header">Vloeiende lus maken</s:String>
+    <s:String x:Key="S.SmoothLoop.StartThreshold">Eerste negeren:</s:String>
+    <s:String x:Key="S.SmoothLoop.From">Vergelijken met:</s:String>
+    <s:String x:Key="S.SmoothLoop.From.Last">Einde</s:String>
+    <s:String x:Key="S.SmoothLoop.From.First">Begin</s:String>
+    <s:String x:Key="S.SmoothLoop.Info">Probeert een frame te vinden dat minstens {0}% lijkt op het startframe en verwijdert alle latere frames.&#x0d; Je kunt kiezen of je enkele initiële frames wilt negeren en de vergelijking vanaf het begin (na de drempel) of het einde wilt starten.</s:String>
+    <s:String x:Key="S.SmoothLoop.Warning.Threshold">Het aantal te negeren frames moet kleiner zijn dan het totale aantal frames.</s:String>
+    <s:String x:Key="S.SmoothLoop.Warning.NoLoopFound">Met de geselecteerde instellingen was het niet mogelijk om een vloeiende lus te maken.</s:String>
     
     <!--Editor • Captions-->
     <s:String x:Key="S.Caption.Text">Tekst</s:String>
@@ -1346,6 +1373,9 @@
 
     <!--Editor • Mouse clicks-->
     <s:String x:Key="S.MouseClicks">Muisklikken</s:String>
+    <s:String x:Key="S.MouseClicks.Color.Left">Kleur middenknop</s:String>
+    <s:String x:Key="S.MouseClicks.Color.Middle">Kleur rechterknop</s:String>
+    <s:String x:Key="S.MouseClicks.Color.Right">Kleur linkerknop</s:String>
     <s:String x:Key="S.MouseClicks.Warning.None">Er zijn geen muisklikken gedetecteerd in dit project.</s:String>
     
     <!--Editor • Watermark-->
@@ -1774,7 +1804,7 @@
     <s:String x:Key="S.Feedback.Warning.Title">Geef je bericht een onderwerp.</s:String>
     <s:String x:Key="S.Feedback.Warning.Message">Je moet een bericht typen in de feedback.</s:String>
     <s:String x:Key="S.Feedback.Warning.Email">Je moet uw e-mailadres typen om een antwoord van de ontwikkelaar te ontvangen.</s:String>
-    <s:String x:Key="S.Feedback.Sending">Verzending in de achtergrond… Dit scherm sluit binnenkort.</s:String>
+    <s:String x:Key="S.Feedback.Sending">Verzending in de achtergrond… Dit venster sluit binnenkort.</s:String>
     <s:String x:Key="S.Feedback.Attachments">Bijlagen (optioneel, 20MB maximum)</s:String>
     <s:String x:Key="S.Feedback.AddAttachments">Bijlagen toevoegen</s:String>
     <s:String x:Key="S.Feedback.RemoveAttachments">Alle bijlagen verwijderen</s:String>

@@ -132,7 +132,7 @@
     <s:String x:Key="S.StartUp.Editor">Edytor</s:String>
     <s:String x:Key="S.StartUp.Editor.Tooltip">Otwiera okno edytora, głównego narzędzia tej aplikacji, gdzie łatwo możesz nagrywać i edytować.</s:String>
     <s:String x:Key="S.StartUp.Options">Opcje</s:String>
-    <s:String x:Key="S.StartUp.NewRelease">Nowa wersja dostępna • {0}</s:String>
+    <s:String x:Key="S.StartUp.NewRelease">Nowa wersja dostępna</s:String>
     <s:String x:Key="S.StartUp.NewRelease.Tooltip">Pobiera najnowszą wersję ScreenToGif.</s:String>
 
     <!--Updater-->
@@ -199,6 +199,7 @@
     <s:String x:Key="S.Options.App.Theme.Scheme.Medium">Średni</s:String>
     <s:String x:Key="S.Options.App.Theme.Scheme.Dark">Ciemny</s:String>
     <s:String x:Key="S.Options.App.Theme.Scheme.VeryDark">Bardzo ciemny</s:String>
+    <s:String x:Key="S.Options.App.Theme.Scheme.FollowSystem">Jak systemowy</s:String>
     <s:String x:Key="S.Options.App.Theme.Scheme.Custom">Niestandardowy...</s:String>
     <!--<s:String x:Key="S.Options.App.Theme.Scheme.Example">Example colors.</s:String>-->
     <!--<s:String x:Key="S.Options.App.Tray">System tray icon</s:String>-->
@@ -632,7 +633,7 @@
     <s:String x:Key="S.InsertFrames.ImageSize">Rozmiar obrazu:</s:String>
     <s:String x:Key="S.InsertFrames.ImagePosition">Położenie obrazu:</s:String>
     <s:String x:Key="S.InsertFrames.ResetImageSizePosition">Resetuj rozmiar&#x0d;i położenie obrazu</s:String>
-    <s:String x:Key="S.InsertFrames.Info2">Nowe klatki będą wstawione do obecnej listy klatek w położeniu:</s:String>
+    <s:String x:Key="S.InsertFrames.Info2">Nowe klatki będą wstawione do obecnej&#10;listy klatek w położeniu:</s:String>
     <s:String x:Key="S.InsertFrames.Before">Przed</s:String>
     <s:String x:Key="S.InsertFrames.After">Po</s:String>
     <s:String x:Key="S.InsertFrames.Frame">Klatka</s:String>
@@ -720,9 +721,9 @@
     <s:String x:Key="S.Editor.Image">Obraz</s:String>
     <s:String x:Key="S.Editor.Transitions">Przejścia</s:String>
     <s:String x:Key="S.Editor.Statistics">Statystyki</s:String>
-    <s:String x:Key="S.Editor.Options">Opcje</s:String>
+    <s:String x:Key="S.Editor.Options">Ustawienia</s:String>
     <s:String x:Key="S.Editor.Help">Pomoc</s:String>
-    <s:String x:Key="S.Editor.Extras">Dodatki</s:String>
+    <s:String x:Key="S.Editor.Extras">Opcje</s:String>
     <!--<s:String x:Key="S.Editor.UpdateAvailable">A new update is available!</s:String>-->
     <!--<s:String x:Key="S.Editor.UpdateAvailable.Info">Click here to read more about it.</s:String>-->
     <s:String x:Key="S.Editor.FrameNumbersInfo">Całkowita liczba klatek, liczba wybranych klatek, indeks wybranych klatek</s:String>
@@ -1151,6 +1152,9 @@
 
     <!--Editor • Mouse clicks-->
     <s:String x:Key="S.MouseClicks">Kliknięcia myszy</s:String>
+    <s:String x:Key="S.MouseClicks.Color.Left">Kolor dla lewego przycisku:</s:String>
+    <s:String x:Key="S.MouseClicks.Color.Middle">Kolor dla środkowego przycisku:</s:String>
+    <s:String x:Key="S.MouseClicks.Color.Right">Kolor dla prawego przycisku:</s:String>
     <s:String x:Key="S.MouseClicks.Warning.None">Nie wykryto kliknięć myszy w Twoim projekcie.</s:String>
     
     <!--Editor • Watermark-->

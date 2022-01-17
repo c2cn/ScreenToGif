@@ -61,7 +61,12 @@
     <s:String x:Key="S.Warning.Graphics.Switch">Open Windows Settings</s:String>
     
     <!--Keys-->
+    <s:String x:Key="S.Keys.Enter">Enter</s:String>  
+    <s:String x:Key="S.Keys.Esc">Esc</s:String>  
     <s:String x:Key="S.Keys.Space">Space</s:String>  
+
+    <!--Mouse-->
+    <s:String x:Key="S.Mouse.Right">Right-Click</s:String>  
     
     <!--Tray icon-->
     <s:String x:Key="S.NewRecording">New screen recording</s:String>
@@ -104,6 +109,7 @@
     <s:String x:Key="S.Command.DeleteNext">Delete all next frames</s:String>
     <s:String x:Key="S.Command.RemoveDuplicates">Remove duplicates</s:String>
     <s:String x:Key="S.Command.Reduce">Reduce frame count</s:String>
+    <s:String x:Key="S.Command.SmoothLoop">Create a smooth loop</s:String>
     <s:String x:Key="S.Command.Reverse">Reverse animation</s:String>
     <s:String x:Key="S.Command.Yoyo">Makes the animation go forward and backwards</s:String>
     <s:String x:Key="S.Command.MoveLeft">Move the selected frame to the left</s:String>
@@ -151,7 +157,7 @@
     <s:String x:Key="S.StartUp.Editor">Editor</s:String>
     <s:String x:Key="S.StartUp.Editor.Tooltip">Opens the editor window, the central point of this app,&#10;where you can start and edit a new recording.</s:String>
     <s:String x:Key="S.StartUp.Options">Options</s:String>
-    <s:String x:Key="S.StartUp.NewRelease">New release available • {0}</s:String>
+    <s:String x:Key="S.StartUp.NewRelease">New version available</s:String>
     <s:String x:Key="S.StartUp.NewRelease.Tooltip">Downloads the latest version of ScreenToGif.</s:String>
 
     <!--Updater-->
@@ -159,6 +165,7 @@
     <s:String x:Key="S.Updater.Header">A new update is available</s:String>
     <s:String x:Key="S.Updater.NewRelease">New release!</s:String>
     <s:String x:Key="S.Updater.NewRelease.Info">New release available, Version {0}!&#x0d;Click here for more details.</s:String>
+    <s:String x:Key="S.Updater.NoNewRelease.Info">It appears that your system is no longer supported or something changed in the update system. Try downloading it manually from the website.</s:String>
     <s:String x:Key="S.Updater.Version">Version</s:String>
     <s:String x:Key="S.Updater.Portable">Portable</s:String>
     <s:String x:Key="S.Updater.Installer">Installer</s:String>
@@ -195,9 +202,7 @@
     <s:String x:Key="S.Options.Other">Other</s:String>
     <s:String x:Key="S.Options.Warning.Follow.Header">Missing shortcut key for cursor following</s:String>
     <s:String x:Key="S.Options.Warning.Follow.Message">In order to use the mouse cursor following feature, you must set a shortcut key to toggle it when needed.</s:String>
-    <s:String x:Key="S.Options.Warning.DesktopDuplication.Header">Missing dependencies for screen capture</s:String>
-    <s:String x:Key="S.Options.Warning.DesktopDuplication.Message">In order to capture the screen with the Desktop Duplication API, you must download the SharpDx libraries.</s:String>
-    
+
     <!--Options • Application-->
     <s:String x:Key="S.Options.App.Startup">Startup</s:String>
     <s:String x:Key="S.Options.App.Startup.Mode.Manual">Start&#10;manually</s:String>
@@ -225,6 +230,7 @@
     <s:String x:Key="S.Options.App.Theme.Scheme.Medium">Medium</s:String>
     <s:String x:Key="S.Options.App.Theme.Scheme.Dark">Dark</s:String>
     <s:String x:Key="S.Options.App.Theme.Scheme.VeryDark">Very Dark</s:String>
+    <s:String x:Key="S.Options.App.Theme.Scheme.FollowSystem">Follow system</s:String>
     <s:String x:Key="S.Options.App.Theme.Scheme.Custom">Custom</s:String>
     <s:String x:Key="S.Options.App.Theme.Scheme.Example">Example colors.</s:String>
     <s:String x:Key="S.Options.App.Tray">System tray icon</s:String>
@@ -278,7 +284,7 @@
     
     <s:String x:Key="S.Options.Recorder.Mode">Capture mode</s:String>
     <s:String x:Key="S.Options.Recorder.Bitblt.Info">Use the older capture method, which is slower and may not work capturing games,&#10;but requires no additional plug-ins.</s:String>
-    <s:String x:Key="S.Options.Recorder.DirectX.Info">Use the Desktop Duplication API capture method, which is faster and&#10;is able to capture fullscreen games, but requires the SharpDx plug-in and Windows 8 or newer.</s:String>
+    <s:String x:Key="S.Options.Recorder.DirectX.Info">Use the Desktop Duplication API capture method, which is faster and&#10;is able to capture fullscreen games, but requires Windows 8 or newer.</s:String>
     <s:String x:Key="S.Options.Recorder.File">Save to&#10;file</s:String>
     <s:String x:Key="S.Options.Recorder.File.Info">Each frame captured will be saved directly as an image on disk.</s:String>
     <s:String x:Key="S.Options.Recorder.Cache">Memory&#10;cache</s:String>
@@ -368,6 +374,12 @@
     <s:String x:Key="S.Options.Editor.General.LimitHistory">Impose a limit to the undo/redo history.</s:String>
     <s:String x:Key="S.Options.Editor.General.LimitHistory.Info">(Older actions will be removed when the limit is reached)</s:String>
     <s:String x:Key="S.Options.Editor.General.LimitHistory.Maximum">(Maximum number of actions stored)</s:String>
+    <s:String x:Key="S.Options.Editor.General.SyncPath.Folder">Sync the output folder among presets.</s:String>
+    <s:String x:Key="S.Options.Editor.General.SyncPath.Folder.Info">(Presets will use the same output path)</s:String>
+    <s:String x:Key="S.Options.Editor.General.SyncPath.Filename">Also sync the filename.</s:String>
+    <s:String x:Key="S.Options.Editor.General.SyncPath.Filename.Info">(Presets will also use the same filename)</s:String>
+    <s:String x:Key="S.Options.Editor.General.SyncPath.SameType">Only sync among presets of the same file type.</s:String>
+    <s:String x:Key="S.Options.Editor.General.SyncPath.SameType.Info">(Only presets of the same file type will be in sync)</s:String>
     
     <!--Options • Tasks-->
     <s:String x:Key="S.Options.Tasks.Title">Automated Task</s:String>
@@ -571,9 +583,6 @@
     <s:String x:Key="S.Options.Extras.GifskiLocation.Select">Select the location of the Gifski library</s:String>
     <s:String x:Key="S.Options.Extras.GifskiLocation.File">Gifski library</s:String>
     <s:String x:Key="S.Options.Extras.GifskiLocation.Invalid">The path of Gifski library contains one or more invalid characters. Please, select a valid location for that library.</s:String>
-    <s:String x:Key="S.Options.Extras.SharpDxLocation">SharpDx folder (SharpDX.dll, SharpDX.Direct3D11.dll and SharpDX.DXGI.dll)</s:String>
-    <s:String x:Key="S.Options.Extras.SharpDxLocation.Select">Select the location of the SharpDx libraries</s:String>
-    <s:String x:Key="S.Options.Extras.SharpDxLocation.Invalid">The path for the SharpDx libraries contains one or more invalid characters. Please, select a valid folder for those libraries.</s:String>
     <s:String x:Key="S.Options.Extras.License.Ffmpeg">FFmpeg license</s:String>
     <s:String x:Key="S.Options.Extras.License.Gifski">Gifski license</s:String>
     <s:String x:Key="S.Options.Extras.License.SharpDx">SharpDx license</s:String>
@@ -601,6 +610,8 @@
     
     <!--Options • About-->
     <s:String x:Key="S.Options.About.Version">Version:</s:String>
+    <s:String x:Key="S.Options.About.UpdateCheck">Check for Updates</s:String>
+    <s:String x:Key="S.Options.About.UpdateCheck.Nothing">You already have the latest version.</s:String>
     <s:String x:Key="S.Options.About.Author">Author: Nicke Manarin</s:String>
     <s:String x:Key="S.Options.About.StoreVersion">Microsoft Store version. Some features are disabled due to enforced policies.</s:String>
     <s:String x:Key="S.Options.About.Contact">Contact</s:String>
@@ -678,8 +689,7 @@
     <s:String x:Key="S.Recorder.Warning.CaptureNotPossible.Info">It was not possible to capture the screen. The capture method returned no frame after 5 tries.</s:String>
     <s:String x:Key="S.Recorder.Warning.StartPauseNotPossible">It was not possible to start/pause capturing the screen</s:String>
     <s:String x:Key="S.Recorder.Warning.Windows8">Windows 8 or newer is required for capturing the screen using the Desktop Duplication API.</s:String>
-    <s:String x:Key="S.Recorder.Warning.MissingSharpDx">The SharpDx libraries are required in order to capture the screen using the Desktop Duplication API. Go to Options > Extras to download it.</s:String>
-    
+
     <!--New recorder-->
     <s:String x:Key="S.Recorder.Area">Area</s:String>
     <s:String x:Key="S.Recorder.Area.Select">Select an area</s:String>
@@ -806,7 +816,7 @@
     <s:String x:Key="S.InsertFrames.Title">Insert Frames</s:String>
     <s:String x:Key="S.InsertFrames.Info">Both sides should have the same size, this window allows you to reposition and resize the image and the canvas. Click to select and resize.</s:String>
     <s:String x:Key="S.InsertFrames.CanvasSize">Canvas size:</s:String>
-    <s:String x:Key="S.InsertFrames.FitCanvas">Fit Image on Canvas</s:String>
+    <s:String x:Key="S.InsertFrames.FitCanvas">Fit Image&#10;on Canvas</s:String>
     <s:String x:Key="S.InsertFrames.FitCanvas.Info">Resizes the canvas to fit both images inside (from the top left corner).</s:String>
     <s:String x:Key="S.InsertFrames.DifferentSizes">There is a difference between frame sizes. You need to solve this before inserting the frames.</s:String>
     <s:String x:Key="S.InsertFrames.InsertedFrames">New Frame(s)</s:String>
@@ -814,7 +824,7 @@
     <s:String x:Key="S.InsertFrames.ImageSize">Image size:</s:String>
     <s:String x:Key="S.InsertFrames.ImagePosition">Image position:</s:String>
     <s:String x:Key="S.InsertFrames.ResetImageSizePosition">Reset Image Size&#x0d;and Position</s:String>
-    <s:String x:Key="S.InsertFrames.Info2">New frames will be inserted into the current list of frames at the position:</s:String>
+    <s:String x:Key="S.InsertFrames.Info2">New frames will be inserted into the&#10;current list of frames at the position:</s:String>
     <s:String x:Key="S.InsertFrames.Before">Before</s:String>
     <s:String x:Key="S.InsertFrames.After">After</s:String>
     <s:String x:Key="S.InsertFrames.Frame">Frame</s:String>
@@ -1014,6 +1024,7 @@
     <s:String x:Key="S.Editor.Edit.Delete">Delete</s:String>
     <s:String x:Key="S.Editor.Edit.Frames.Duplicates">Remove&#x0d;Duplicates</s:String>
     <s:String x:Key="S.Editor.Edit.Frames.Reduce">Reduce&#x0d;Frame Count</s:String>
+    <s:String x:Key="S.Editor.Edit.Frames.SmoothLoop">Smooth&#x0d;Loop</s:String>
     <s:String x:Key="S.Editor.Edit.DeletePrevious">Delete All Previous</s:String>
     <s:String x:Key="S.Editor.Edit.DeleteNext">Delete All Next</s:String>
     
@@ -1123,7 +1134,8 @@
     <s:String x:Key="S.Editor.Warning.Ffmpeg">FFmpeg not present. Add it to the Path environment variables or click here to open Options > Extras to set the location.</s:String>
     <s:String x:Key="S.Editor.Warning.Gifski">Gifski not present. Add it to the Path environment variables or click here to open Options > Extras to set the location.</s:String>
     <s:String x:Key="S.Editor.Warning.LowSpace">There's not enough space left on the drive where this app stores its cache ({0}% left). Click here to open Options > Temporary Files to free some space.</s:String>
-    <s:String x:Key="S.Editor.Warning.DifferentDpi">You tried to import multiple images with different DPIs, which is not supported. Some of them got imported, the others need to be imported separately.</s:String>
+    <s:String x:Key="S.Editor.Warning.DifferentDpi">You tried to import multiple images with different DPIs, which is not supported. Some of them got imported, others need to be imported separately.</s:String>
+    <s:String x:Key="S.Editor.Warning.DifferentSize">You tried to import multiple images with different sizes, which is not supported. Some of them got imported, others need to be imported separately.</s:String>
     
     <!--Editor • Status-->
     <s:String x:Key="S.Editor.RetrievingFromCache">Retrieving frames from the cache</s:String>
@@ -1144,6 +1156,8 @@
     <s:String x:Key="S.Editor.ApplyingTransition">Applying the transition effect</s:String>
     <s:String x:Key="S.Editor.PreparingSaving">Preparing to save</s:String>
     <s:String x:Key="S.Editor.CancelDiscard">Cancel loading and discard project.</s:String>
+    <s:String x:Key="S.Editor.FindingLoop">Finding perfect loop</s:String>
+    <s:String x:Key="S.Editor.DiscardingLoop">Discarding frames not used in loop</s:String>
 
     <!--Editor • Frame list-->
     <s:String x:Key="S.Editor.List.Frame">Frame:</s:String>
@@ -1228,16 +1242,18 @@
     <s:String x:Key="S.Clipboard.After">After selected frame</s:String>
     
     <!--Editor • Resize-->
-    <s:String x:Key="S.Resize.CurrentProperties">Current Properties</s:String>
+    <s:String x:Key="S.Resize.Difference">Difference</s:String>
     <s:String x:Key="S.Resize.Dpi">Dpi</s:String>
-    <s:String x:Key="S.Resize.NewProperties">New Properties</s:String>
+    <s:String x:Key="S.Resize.Options">Options</s:String>
+    <s:String x:Key="S.Resize.Pixels">Pixels (px)</s:String>
+    <s:String x:Key="S.Resize.Percent">Percent (%)</s:String>
     <s:String x:Key="S.Resize.Dpi2">DPI:</s:String>
     <s:String x:Key="S.Resize.KeepAspect">Keep the aspect ratio.</s:String>
-    <s:String x:Key="S.Resize.Options">Options</s:String>
-    <s:String x:Key="S.Resize.ScalingQuality">Scaling Quality:</s:String>
-    <s:String x:Key="S.Resize.ScalingQuality.Fant">Fant (higher quality)</s:String>
-    <s:String x:Key="S.Resize.ScalingQuality.Linear">Linear (lower quality)</s:String>
-    <s:String x:Key="S.Resize.ScalingQuality.NearestNeighbor">Nearest neighbor (lower quality and faster)</s:String>
+    <s:String x:Key="S.Resize.ScalingQuality">Quality:</s:String>
+    <s:String x:Key="S.Resize.ScalingQuality.Fant">Fant • Higher quality</s:String>
+    <s:String x:Key="S.Resize.ScalingQuality.Linear">Linear • Lower quality</s:String>
+    <s:String x:Key="S.Resize.ScalingQuality.NearestNeighbor">Nearest neighbor • Lower quality and faster</s:String>
+    <s:String x:Key="S.Resize.ScalingQuality.Info">Scaling quality.</s:String>
     <s:String x:Key="S.Resize.Warning">You have to select a different value to apply the Resize action to.</s:String>
     
     <!--Editor • Crop-->
@@ -1281,6 +1297,16 @@
     <s:String x:Key="S.RemoveDuplicates.Delay.Average">Use the average</s:String>
     <s:String x:Key="S.RemoveDuplicates.Delay.Sum">Use the sum</s:String>
     <s:String x:Key="S.RemoveDuplicates.Info">This action analyzes each frame (pixel by pixel) and removes the ones that are at least {0} % similar to its immediate neighbor.&#x0d;You can choose if you want to adjust the delay (duration of exhibition) of the frames.</s:String>
+
+    <!--Editor • Smooth Loop-->
+    <s:String x:Key="S.SmoothLoop.Header">Create smooth loop</s:String>
+    <s:String x:Key="S.SmoothLoop.StartThreshold">Ignore first:</s:String>
+    <s:String x:Key="S.SmoothLoop.From">Compare from:</s:String>
+    <s:String x:Key="S.SmoothLoop.From.Last">End</s:String>
+    <s:String x:Key="S.SmoothLoop.From.First">Start</s:String>
+    <s:String x:Key="S.SmoothLoop.Info">Tries to find a frame at least {0} % similar to the start frame and deletes all later frames.&#x0d;You can choose if you want to ignore some initial frames and initiate the comparison from the start (after the threshold) or the end.</s:String>
+    <s:String x:Key="S.SmoothLoop.Warning.Threshold">The number of frames to ignore needs to be smaller than the total number of frames.</s:String>
+    <s:String x:Key="S.SmoothLoop.Warning.NoLoopFound">It was not possible to create a smooth loop with the selected settings.</s:String>
     
     <!--Editor • Captions-->
     <s:String x:Key="S.Caption.Text">Text</s:String>
@@ -1348,6 +1374,9 @@
 
     <!--Editor • Mouse clicks-->
     <s:String x:Key="S.MouseClicks">Mouse Clicks</s:String>
+    <s:String x:Key="S.MouseClicks.Color.Left">Left button color:</s:String>
+    <s:String x:Key="S.MouseClicks.Color.Middle">Middle button color:</s:String>
+    <s:String x:Key="S.MouseClicks.Color.Right">Right button color:</s:String>
     <s:String x:Key="S.MouseClicks.Warning.None">There's no detected mouse clicks on your project.</s:String>
     
     <!--Editor • Watermark-->
